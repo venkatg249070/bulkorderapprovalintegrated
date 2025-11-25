@@ -1,0 +1,44 @@
+{
+  "name": "bworderapproval",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "dependencies": {
+    "@cap-js/hana": "^2",
+    "@sap/cds": "^9",
+    "express": "^4",
+    "@sap/xssec": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2",
+    "@sap/cds-dk": "^9",
+    "cds-plugin-ui5": "^0.13.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-uibworderapproval": "cds watch --open uibworderapproval/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "private": true,
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/uibworderapproval"
+  ],
+  "cds": {
+    "requires": {
+      "[production]": {
+        "db": "hana",
+        "auth": "mocked"
+      },
+      "html5-repo": true,
+      "destinations": true,
+      "workzone": true
+    },
+    "server": {
+      "index": true,
+      "body_parser": {
+        "limit": "50mb" 
+      }
+    }
+  }
+}
