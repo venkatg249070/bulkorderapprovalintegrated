@@ -1,5 +1,7 @@
 using {strbw as mydb} from '../db/data-model';
-
+service CatalogService @(path:'/CatalogService') {
+    entity WKKCInput as projection on mydb.STR_INLLM;
+}
 service MyOrderApprovalService {
     @odata.draft.bypass
     @odata.draft.enabled
