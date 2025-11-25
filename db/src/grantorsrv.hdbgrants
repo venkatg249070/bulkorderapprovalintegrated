@@ -1,0 +1,64 @@
+{
+	"hanasrv": {
+		"application_user": {
+			"global_object_privileges": [
+				{
+					"type": "REMOTE SOURCE",
+					"name": "H2Q",
+					"privileges": [
+						"ALTER",
+						"REMOTE TABLE ADMIN",
+						"REMOTE EXECUTE",
+						"PROCESS REMOTE SUBSCRIPTION EXCEPTION",
+						"CREATE VIRTUAL TABLE",
+						"LINKED DATABASE",
+						"CREATE VIRTUAL PROCEDURE",
+						"CREATE REMOTE SUBSCRIPTION",
+						"CREATE VIRTUAL FUNCTION"
+					],
+					"privileges_with_grant_option": [
+						"REMOTE TABLE ADMIN",
+						"REMOTE EXECUTE",
+						"PROCESS REMOTE SUBSCRIPTION EXCEPTION",
+						"LINKED DATABASE",
+						"CREATE VIRTUAL TABLE",
+						"CREATE VIRTUAL PROCEDURE",
+						"CREATE VIRTUAL FUNCTION",
+						"CREATE REMOTE SUBSCRIPTION",
+						"ALTER"
+					]
+				}
+			]
+		},
+		"object_owner": {
+			"global_object_privileges": [
+				{
+					"type": "REMOTE SOURCE",
+					"name": "H2Q",
+					"privileges": [
+						"ALTER",
+						"REMOTE TABLE ADMIN",
+						"REMOTE EXECUTE",
+						"PROCESS REMOTE SUBSCRIPTION EXCEPTION",
+						"CREATE VIRTUAL TABLE",
+						"LINKED DATABASE",
+						"CREATE VIRTUAL PROCEDURE",
+						"CREATE REMOTE SUBSCRIPTION",
+						"CREATE VIRTUAL FUNCTION"
+					],
+					"privileges_with_grant_option": [
+						"REMOTE TABLE ADMIN",
+						"REMOTE EXECUTE",
+						"PROCESS REMOTE SUBSCRIPTION EXCEPTION",
+						"LINKED DATABASE",
+						"CREATE VIRTUAL TABLE",
+						"CREATE VIRTUAL PROCEDURE",
+						"CREATE VIRTUAL FUNCTION",
+						"CREATE REMOTE SUBSCRIPTION",
+						"ALTER"
+					]
+				}
+			]
+		}
+	}
+}
